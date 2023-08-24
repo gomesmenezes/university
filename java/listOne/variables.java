@@ -23,5 +23,7 @@ public class variables {
   Boolean peso1Boolean = true;
 
   System.out.println("Você digitou um Texto sendo: " + text + "\n" + "Você digitou um número de 0 a 10 sendo: " + number + "\n" + "Você digitou seu peso sendo kg: " + weight + " " + peso1Boolean);
+  
+  scanner.close();
   }
 }
