@@ -1,3 +1,5 @@
+// Escreva um programa que tenha todos os tipos de variáveis vistos. Imprima todas as variáveis;
+
 package listOne;
 import java.util.Scanner;
 
@@ -6,7 +8,7 @@ public class variables {
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Digite um texto: ");
-    String text = scanner.next();
+    String text = scanner.nextLine();
 
     System.out.println("Digite um número entre 0 e 10");
     Integer number = Integer.parseInt(scanner.next());
