@@ -2,6 +2,7 @@
 
 package listOne;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class calculator {
   public static void main(String[] args) {
@@ -10,22 +11,27 @@ public class calculator {
     System.out.println("Digite o primeiro número: ");
     Integer numberOne = Integer.parseInt(scanner.nextLine());
 
-    System.out.println("Digite o primeiro número: ");
+    System.out.println("Digite o segundo número: ");
     Integer numberTwo = Integer.parseInt(scanner.nextLine());
 
-    Integer sum = numberOne + numberTwo;
-    Integer sub = numberOne - numberTwo;
-    Integer multiplier = numberOne * numberTwo;
-    Integer division = numberOne / numberTwo;
-    Integer rest = numberOne % numberTwo;
-    Integer exponent = numberOne ^ numberTwo;
+    double numOneDouble = (double) numberOne;
+    double numTwoDouble = (double) numberTwo;
 
-    System.out.println("Soma do número " + numberOne + " + " + numberTwo + " é igual a " + sum);
-    System.out.println("Subtração do número " + numberOne + " - " + numberTwo + " é igual a " + sub);
-    System.out.println("Multiplicação do número " + numberOne + " * " + numberTwo + " é igual a " + multiplier);
-    System.out.println("Divisão do número " + numberOne + " / " + numberTwo + " é igual a " + division);
-    System.out.println("Resto do número " + numberOne + " % " + numberTwo + " é igual a " + rest);
-    System.out.println("Expoente do número " + numberOne + " ^ " + numberTwo + " é igual a " + exponent);
+    Double sum = numOneDouble + numTwoDouble;
+    Double sub = numOneDouble - numTwoDouble;
+    Double multiplier = numOneDouble * numTwoDouble;
+    Double division = numOneDouble / numTwoDouble;
+    Double rest = numOneDouble % numTwoDouble;
+    Double exponent = Math.pow(numOneDouble, numTwoDouble);
+
+    DecimalFormat decimalFormat = new DecimalFormat("0.00");
+
+    System.out.println("Soma do número " + numOneDouble + " + " + numTwoDouble + " é igual a " + decimalFormat.format(sum));
+    System.out.println("Subtração do número " + numOneDouble + " - " + numTwoDouble + " é igual a " + decimalFormat.format(sub));
+    System.out.println("Multiplicação do número " + numOneDouble + " * " + numTwoDouble + " é igual a " + decimalFormat.format(multiplier));
+    System.out.println("Divisão do número " + numOneDouble + " / " + numTwoDouble + " é igual a " + decimalFormat.format(division));
+    System.out.println("Resto do número " + numOneDouble + " % " + numTwoDouble + " é igual a " + decimalFormat.format(rest));
+    System.out.println("Expoente do número " + numOneDouble + " ^ " + numTwoDouble + " é igual a " + decimalFormat.format(exponent));
 
     scanner.close();
   }
