@@ -12,7 +12,7 @@ public class fahrenheitforcelcius {
     Double fahrenheit = (celsius * 9/5) + 32;
     double kelvin = celsius + 273.15;
 
-    System.out.println("O valor em Fahrenheit: " + fahrenheit + " e o valor em kelvin: " + kelvin);
+    System.out.printf("O valor em Fahrenheit: " + fahrenheit + " e o valor em kelvin: " + kelvin);
 
     scanner.close();
   }
