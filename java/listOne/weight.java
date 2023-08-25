@@ -7,7 +7,7 @@ public class weight {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Digite o peso: ");
+    System.out.print("Digite o peso: ");
     Double weight = scanner.nextDouble();
 
     Double libra = weight * 2.205;
