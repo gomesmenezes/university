@@ -3,7 +3,7 @@ número. */
 package listTwo;
 import java.util.Scanner;
 
-public class highest {
+public class bigger {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
