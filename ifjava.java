@@ -18,7 +18,6 @@ public class ifjava {
       System.out.println("O segundo número que você digitou é maior que o primeiro. ");
     }
 
-
     scanner.close();
   }
 }
